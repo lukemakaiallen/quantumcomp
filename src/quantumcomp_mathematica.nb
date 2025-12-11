@@ -1,0 +1,52 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1149,         42]
+NotebookOptionsPosition[       799,         28]
+NotebookOutlinePosition[      1200,         44]
+CellTagsIndexPosition[      1157,         41]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+In this file we will show the difference in quantum computing vs classic \
+methods.\
+\>", "Text",
+ CellChangeTimes->{{3.9744154310052447`*^9, 
+  3.9744154515316715`*^9}},ExpressionUUID->"9365bb65-6c49-4bd6-9afa-\
+6fa59a8f3de7"]
+},
+WindowSize->{571, 478},
+WindowMargins->{{189, Automatic}, {11, Automatic}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (August 22, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ac2849f5-a5ac-4900-9d12-e1bd70551015"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 237, 6, 58, "Text",ExpressionUUID->"9365bb65-6c49-4bd6-9afa-6fa59a8f3de7"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
