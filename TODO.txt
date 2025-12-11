@@ -1,0 +1,7 @@
+This is the To Do list for tasks to work on for our 230 project:
+Current to do: 
+-import python simulation of algotrithm
+-classical vs quantum solutions of algorithm
+-all the little things that come up
+-presentation
+-results
