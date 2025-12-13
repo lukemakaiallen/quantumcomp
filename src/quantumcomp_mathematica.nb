@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29158,        556]
-NotebookOptionsPosition[     28140,        530]
-NotebookOutlinePosition[     28539,        546]
-CellTagsIndexPosition[     28496,        543]
+NotebookDataLength[     31273,        611]
+NotebookOptionsPosition[     29930,        580]
+NotebookOutlinePosition[     30331,        596]
+CellTagsIndexPosition[     30288,        593]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -526,10 +526,60 @@ Cell[BoxData[
  CellChangeTimes->{{3.9746398491855164`*^9, 
   3.9746399551341076`*^9}},ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-\
 686bfdf6a4f4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Classical implementation", "Subtitle",
+ CellChangeTimes->{{3.9746412131670456`*^9, 
+  3.9746412217290764`*^9}},ExpressionUUID->"997281b5-9645-c14e-984c-\
+caa257a06b15"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fbalanced", "[", "n_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "balencedlist", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"balencedlist", " ", "=", " ", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"AppendTo", "[", 
+         RowBox[{"balencedlist", ",", "1"}], "]"}], ";", 
+        RowBox[{"AppendTo", "[", 
+         RowBox[{"balencedlist", ",", "0"}], "]"}]}], ",", "n"}], "]"}], ";", 
+     "\[IndentingNewLine]", "balencedlist"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.97464131266856*^9, 3.974641356777445*^9}, {
+  3.97464144502388*^9, 3.974641609679249*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fconstant", "[", "n_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"constantlist", ",", "times"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"constantlist", "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"constantlist", ",", "1"}], "]"}], ",", 
+       RowBox[{"n", "*", "2"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     "constantlist"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.9746420864098816`*^9, 3.9746422867884254`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"]
 }, Open  ]]
 },
-WindowSize->{1428, 735.75},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{960, 532},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
 FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ac2849f5-a5ac-4900-9d12-e1bd70551015"
@@ -552,11 +602,16 @@ Cell[1159, 36, 24559, 431, 59, "Output",ExpressionUUID->"ac2455cd-0928-d74d-9faa
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[25755, 472, 217, 3, 28, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
-Cell[25975, 477, 1349, 24, 89, "Output",ExpressionUUID->"33b833d0-80fa-f84c-83aa-d7067a698e9f"]
+Cell[25975, 477, 1349, 24, 146, "Output",ExpressionUUID->"33b833d0-80fa-f84c-83aa-d7067a698e9f"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[27361, 506, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
 Cell[27535, 511, 589, 16, 66, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28161, 532, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
+Cell[28338, 537, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
+Cell[29180, 559, 734, 18, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"]
 }, Open  ]]
 }
 ]
