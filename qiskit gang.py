@@ -63,7 +63,7 @@ def dj_algorithm(oracle_gate, n):
         dj_circuit.measure(i, i)
     return dj_circuit
 n = 9 # number of qubits in simulation
-oracle_type = 'constant'  # can change to constant
+oracle_type = 'constant'  # can change to constant or balanced
 # Build Circuit
 oracle = dj_oracle(oracle_type, n)
 dj_circuit = dj_algorithm(oracle, n)
@@ -82,3 +82,4 @@ if '0' * n in counts:
     print("Prediction: Function is CONSTANT.")
 else:
     print("Prediction: Function is BALANCED.")
+
