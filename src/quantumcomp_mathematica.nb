@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     28136,        526]
-NotebookOptionsPosition[     27340,        504]
-NotebookOutlinePosition[     27741,        520]
-CellTagsIndexPosition[     27698,        517]
+NotebookDataLength[     29158,        556]
+NotebookOptionsPosition[     28140,        530]
+NotebookOutlinePosition[     28539,        546]
+CellTagsIndexPosition[     28496,        543]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -500,10 +500,36 @@ Cell[BoxData[
    ",", "\<\"QuantumWignerTransform\"\>"}], "}"}]], "Output",
  CellChangeTimes->{3.974638834273405*^9},
  CellLabel->"Out[5]=",ExpressionUUID->"33b833d0-80fa-f84c-83aa-d7067a698e9f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Quantum Implementation:", "Subtitle",
+ CellChangeTimes->{{3.974639824582512*^9, 
+  3.9746398314508553`*^9}},ExpressionUUID->"2ac46703-23f2-b04a-a65d-\
+471a180a5967"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "define", " ", "a", " ", "balanced", " ", "boolean", " ", "function"}], 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"bFunction", " ", "=", " ", 
+     RowBox[{"BooleanFunction", "[", 
+      RowBox[{"2", ",", "2"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"BooleanConvert", "[", "bFunction", "]"}], "[", 
+    RowBox[{"x", ",", "y"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9746398491855164`*^9, 
+  3.9746399551341076`*^9}},ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-\
+686bfdf6a4f4"]
 }, Open  ]]
 },
-WindowSize->{1440, 741.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{1428, 735.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ac2849f5-a5ac-4900-9d12-e1bd70551015"
@@ -526,7 +552,11 @@ Cell[1159, 36, 24559, 431, 59, "Output",ExpressionUUID->"ac2455cd-0928-d74d-9faa
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[25755, 472, 217, 3, 28, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
-Cell[25975, 477, 1349, 24, 108, "Output",ExpressionUUID->"33b833d0-80fa-f84c-83aa-d7067a698e9f"]
+Cell[25975, 477, 1349, 24, 89, "Output",ExpressionUUID->"33b833d0-80fa-f84c-83aa-d7067a698e9f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27361, 506, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
+Cell[27535, 511, 589, 16, 66, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"]
 }, Open  ]]
 }
 ]
