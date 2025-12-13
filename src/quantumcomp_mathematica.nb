@@ -26,9 +26,9 @@ methods.\
   3.9744154515316715`*^9}},ExpressionUUID->"9365bb65-6c49-4bd6-9afa-\
 6fa59a8f3de7"]
 },
-WindowSize->{571, 478},
-WindowMargins->{{189, Automatic}, {11, Automatic}},
-FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (August 22, 2022)",
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ac2849f5-a5ac-4900-9d12-e1bd70551015"
 ]
@@ -43,10 +43,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 237, 6, 58, "Text",ExpressionUUID->"9365bb65-6c49-4bd6-9afa-6fa59a8f3de7"]
+Cell[558, 20, 237, 6, 33, "Text",ExpressionUUID->"9365bb65-6c49-4bd6-9afa-6fa59a8f3de7"]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
