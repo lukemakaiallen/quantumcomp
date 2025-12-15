@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     62145,       1355]
-NotebookOptionsPosition[     58537,       1294]
-NotebookOutlinePosition[     58940,       1310]
-CellTagsIndexPosition[     58897,       1307]
+NotebookDataLength[    133532,       2923]
+NotebookOptionsPosition[    129463,       2849]
+NotebookOutlinePosition[    129866,       2865]
+CellTagsIndexPosition[    129823,       2862]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -39,19 +39,16 @@ Cell[BoxData[
   RowBox[{
    TagBox["PacletObject",
     "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
     TemplateBox[{
       PaneSelectorBox[{False -> GridBox[{{
             PaneBox[
              ButtonBox[
               DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
-               ImageSizeCache -> {
-                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
-              None, BaseStyle -> {}, 
-              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
-              Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
                Automatic, 
                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
@@ -210,31 +207,27 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Version: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["\"1.6.3\"", "SummaryItem"]}]}}, AutoDelete -> False, 
-             BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                 TagBox["\"1.6.3\"", "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-             GridBoxItemSize -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {
-              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
-          False, BaselinePosition -> {1, 1}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
           GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
-        GridBox[{{
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
             PaneBox[
              ButtonBox[
               DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
-               ImageSizeCache -> {
-                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
-              None, BaseStyle -> {}, 
-              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
-              Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
                Automatic, 
                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
@@ -407,20 +400,20 @@ Paclets\\\\Repository\\\\Wolfram__QuantumFramework-1.6.3\"",
                  TagBox[
                   TagBox[
                   "\"Perform analytic and numeric quantum computations\"", 
-                   Short], "SummaryItem"]}]}}, AutoDelete -> False, 
-             BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                   Short], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-             GridBoxItemSize -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {
-              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
-          False, BaselinePosition -> {1, 1}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
           GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
@@ -473,8 +466,9 @@ Wolfram__QuantumFramework-1.6.3"|>],
   Selectable->False]], "Output",
  CellChangeTimes->{{3.974638821388956*^9, 3.9746388303274*^9}, 
    3.9748032581917114`*^9, {3.9748065132915*^9, 3.974806523899418*^9}, {
-   3.97480700062632*^9, 3.9748070044570065`*^9}},
- CellLabel->"Out[5]=",ExpressionUUID->"1dd052d8-a46a-7b44-b48e-a7005da93c8f"]
+   3.97480700062632*^9, 3.9748070044570065`*^9}, {3.9748073153618336`*^9, 
+   3.974807318887045*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"baec9296-30de-9842-add6-5d11b384bb42"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -551,9 +545,8 @@ Cell[BoxData[
    3.9748040747705326`*^9, {3.9748041196123714`*^9, 3.974804121665106*^9}, {
    3.974805561419796*^9, 3.974805570767336*^9}, 3.9748062122317944`*^9, {
    3.974806654443102*^9, 3.974806687023836*^9}, 3.974806730553236*^9, {
-   3.9748071193664513`*^9, 
-   3.974807127434046*^9}},ExpressionUUID->"e2e5c893-ffce-474c-973b-\
-d2b5e3b9aaef"],
+   3.9748071193664513`*^9, 3.974807127434046*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
 
 Cell[CellGroupData[{
 
@@ -674,7 +667,7 @@ Cell[BoxData[
      RowBox[{"(", "n", ")"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
-    RowBox[{"n", " ", "=", " ", "3"}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"n", " ", "=", " ", "5"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"'", 
      RowBox[{"secret", "'"}], " ", "oracle", " ", "generation"}], " ", "*)"}],
@@ -704,22 +697,21 @@ Cell[BoxData[
    3.9748047850443954`*^9, 3.9748049060357876`*^9}, {3.9748049390317*^9, 
    3.974804998440241*^9}, {3.9748051258195534`*^9, 3.974805137356367*^9}, {
    3.9748055373246098`*^9, 3.9748055490255814`*^9}, {3.974806851271715*^9, 
-   3.974806854025551*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
+   3.974806854025551*^9}, 3.974807422278961*^9, 3.974807693935362*^9},
+ CellLabel->"In[31]:=",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"\<\"Actual Hidden Function Type:\"\>", 
-   "\[InvisibleSpace]", "\<\"Balanced\"\>"}],
-  SequenceForm["Actual Hidden Function Type:", "Balanced"],
+   "\[InvisibleSpace]", "\<\"Constant\"\>"}],
+  SequenceForm["Actual Hidden Function Type:", "Constant"],
   Editable->False]], "Print",
- CellChangeTimes->{3.9748062830161285`*^9, 3.9748070226387863`*^9},
+ CellChangeTimes->{3.9748062830161285`*^9, 3.9748070226387863`*^9, 
+  3.974807330934292*^9, 3.9748074316310387`*^9, 3.974807698683956*^9},
  CellLabel->
   "During evaluation of \
-In[9]:=",ExpressionUUID->"6b5fe94d-3011-7b4b-9555-d39c11edfa2b"]
+In[31]:=",ExpressionUUID->"3c85bac7-383a-fa4c-92f6-b66cec7a4106"]
 }, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{" ", 
@@ -736,7 +728,13 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"and", " ", "last", " ", "in"}], " ", "|", 
      RowBox[{"1", ">"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"CONFIG", "->", " ", 
+    RowBox[{"SELECT", " ", "NUMBER", " ", "OF", " ", "INPUT", " ", "QUBITS", " ", 
+     RowBox[{"(", "n", ")"}]}]}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
+   RowBox[{
+    RowBox[{"n", " ", "=", "5"}], ";"}], " ", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"initialState", " ", "=", " ", 
      RowBox[{"QuantumTensorProduct", "[", "\[IndentingNewLine]", 
@@ -792,60 +790,31 @@ Cell[BoxData[
  CellChangeTimes->{{3.974805147534384*^9, 3.974805274192936*^9}, {
    3.974805389585003*^9, 3.9748055349136124`*^9}, {3.974805581843281*^9, 
    3.9748055843359203`*^9}, 3.974805666286106*^9, {3.974805712442766*^9, 
-   3.974805829064438*^9}, {3.9748062305823*^9, 3.974806233219982*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"],
+   3.974805829064438*^9}, {3.9748062305823*^9, 3.974806233219982*^9}, {
+   3.974807276108225*^9, 3.9748073081248455`*^9}, 3.9748074245847893`*^9, 
+   3.9748076956463737`*^9},
+ CellLabel->"In[35]:=",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"],
 
-Cell[BoxData[
- TemplateBox[{
-  "Range", "range", 
-   "\"Range specification in \\!\\(\\*RowBox[{\\\"Range\\\", \\\"[\\\", \
-RowBox[{\\\"1\\\", \\\"+\\\", \\\"n\\\"}], \\\"]\\\"}]\\) does not have \
-appropriate bounds.\"", 2, 2, 1, 30303358304443937316, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.9748065469026318`*^9, 3.974807029515932*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"61d8005d-aa43-2540-96b4-132be0fcb5e7"],
+Cell[CellGroupData[{
 
-Cell[BoxData[
- TemplateBox[{
-  "Range", "range", 
-   "\"Range specification in \\!\\(\\*RowBox[{\\\"Range\\\", \\\"[\\\", \\\"n\
-\\\", \\\"]\\\"}]\\) does not have appropriate bounds.\"", 2, 2, 2, 
-   30303358304443937316, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.9748065469026318`*^9, 3.9748070295209007`*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"aca39b4f-1dca-7d47-9fe3-ed834d3df611"],
+Cell[BoxData["5"], "Input",
+ NumberMarks->False,
+ CellLabel->"In[38]:=",ExpressionUUID->"50e27cb6-af20-ae4b-9dae-d9d847ec0032"],
 
-Cell[BoxData[
- TemplateBox[{
-  "Range", "range", 
-   "\"Range specification in \\!\\(\\*RowBox[{\\\"Range\\\", \\\"[\\\", \\\"n\
-\\\", \\\"]\\\"}]\\) does not have appropriate bounds.\"", 2, 2, 3, 
-   30303358304443937316, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.9748065469026318`*^9, 3.9748070295250397`*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"6d96afde-b2d3-2c4b-8ff1-3df44d53ad3b"],
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.97480770545006*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"1badecfe-73e8-6a4a-a601-4f19a37a76ed"]
+}, Open  ]],
 
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Range\\\", \\\"::\\\", \
-\\\"range\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"", 2, 2, 4, 30303358304443937316, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.9748065469026318`*^9, 3.974807029530222*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"502e887f-0aa0-094f-b9d8-85cdea9b2636"]
+Cell[CellGroupData[{
+
+Cell[BoxData["6"], "Input",
+ NumberMarks->False,
+ CellLabel->"In[26]:=",ExpressionUUID->"36d2cebc-d491-6947-9edc-e48f39e03137"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.974807438718111*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"02b810e1-11aa-6845-9ffd-1c75218ffd87"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -860,7 +829,1718 @@ Cell[BoxData[
    RowBox[{"result", " ", "=", " ", 
     RowBox[{"djCircuit", "[", "initialState", "]"}]}], ";"}]}]], "Input",
  CellChangeTimes->{{3.974805921549776*^9, 3.9748059522242146`*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"62907e41-89aa-2840-8435-48dc983b2ce8"],
+ CellLabel->"In[39]:=",ExpressionUUID->"62907e41-89aa-2840-8435-48dc983b2ce8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["%39"], "Input",
+ NumberMarks->False,
+ CellLabel->"In[40]:=",ExpressionUUID->"4c11df33-a819-6744-aabe-9ef04918085f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumMeasurement",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], ScrollPosition -> {0., 0.}], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], 
+                    "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["32", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], 
+                    "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["32", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Entropy: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{"0.`", "\"b\"", "bits", "\"Bits\""}, 
+                   "Quantity"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Parameters: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", "}"}], "SummaryItem"]}]}}, AutoDelete -> False,
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Wolfram`QuantumFramework`QuantumMeasurement[
+   Wolfram`QuantumFramework`QuantumMeasurementOperator[
+    Wolfram`QuantumFramework`QuantumOperator[
+     Wolfram`QuantumFramework`QuantumState[
+     SparseArray[
+      Automatic, {2048}, 0, {
+       1, {{0, 64}, {{1}, {2}, {67}, {68}, {133}, {134}, {199}, {200}, {
+         265}, {266}, {331}, {332}, {397}, {398}, {463}, {464}, {529}, {
+         530}, {595}, {596}, {661}, {662}, {727}, {728}, {793}, {794}, {
+         859}, {860}, {925}, {926}, {991}, {992}, {1057}, {1058}, {1123}, {
+         1124}, {1189}, {1190}, {1255}, {1256}, {1321}, {1322}, {1387}, {
+         1388}, {1453}, {1454}, {1519}, {1520}, {1585}, {1586}, {1651}, {
+         1652}, {1717}, {1718}, {1783}, {1784}, {1849}, {1850}, {1915}, {
+         1916}, {1981}, {1982}, {2047}, {2048}}}, {
+        2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1}]], 2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1}]], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}], 
+      Wolfram`QuantumFramework`QuantumBasis[<|
+       "Input" -> Wolfram`QuantumFramework`QuditBasis[<|{
+             
+             Wolfram`QuantumFramework`QuditName[\[FormalCapitalI], "Dual" -> 
+              False], 1} -> 1|>], "Output" -> 
+        Wolfram`QuantumFramework`QuditBasis[<|{
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 0], Bold], "Eigenvalue 1"], {
+               0, {1}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 1], Bold], "Eigenvalue 2"], {
+               1, {2}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 2], Bold], "Eigenvalue 3"], {
+               2, {3}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 3], Bold], "Eigenvalue 4"], {
+               3, {4}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 4], Bold], "Eigenvalue 5"], {
+               4, {5}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 5], Bold], "Eigenvalue 6"], {
+               5, {6}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 6], Bold], "Eigenvalue 7"], {
+               6, {7}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 7], Bold], "Eigenvalue 8"], {
+               7, {8}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 8], Bold], "Eigenvalue 9"], {
+               8, {9}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 9], Bold], "Eigenvalue 10"], {
+               9, {10}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 10], Bold], 
+                "Eigenvalue 11"], {10, {11}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 11], Bold], 
+                "Eigenvalue 12"], {11, {12}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 12], Bold], 
+                "Eigenvalue 13"], {12, {13}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 13], Bold], 
+                "Eigenvalue 14"], {13, {14}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 14], Bold], 
+                "Eigenvalue 15"], {14, {15}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 15], Bold], 
+                "Eigenvalue 16"], {15, {16}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 16], Bold], 
+                "Eigenvalue 17"], {16, {17}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 17], Bold], 
+                "Eigenvalue 18"], {17, {18}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 18], Bold], 
+                "Eigenvalue 19"], {18, {19}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 19], Bold], 
+                "Eigenvalue 20"], {19, {20}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 20], Bold], 
+                "Eigenvalue 21"], {20, {21}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 21], Bold], 
+                "Eigenvalue 22"], {21, {22}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 22], Bold], 
+                "Eigenvalue 23"], {22, {23}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 23], Bold], 
+                "Eigenvalue 24"], {23, {24}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 24], Bold], 
+                "Eigenvalue 25"], {24, {25}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 25], Bold], 
+                "Eigenvalue 26"], {25, {26}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 26], Bold], 
+                "Eigenvalue 27"], {26, {27}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 27], Bold], 
+                "Eigenvalue 28"], {27, {28}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 28], Bold], 
+                "Eigenvalue 29"], {28, {29}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 29], Bold], 
+                "Eigenvalue 30"], {29, {30}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 30], Bold], 
+                "Eigenvalue 31"], {30, {31}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 31], Bold], 
+                "Eigenvalue 32"], {31, {32}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 6} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 6} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 7} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 7} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}]|>], 
+        "Picture" -> "Schrodinger", "Label" -> None, 
+        "ParameterSpec" -> {}|>]], {{0, 1, 2, 3, 4, 5, 6}, {}}], {{1, 2, 3, 4,
+     5}}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.9748077119703217`*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"dfb78e48-a491-2849-a22c-2381eefacd5c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["%27"], "Input",
+ NumberMarks->False,
+ CellLabel->"In[28]:=",ExpressionUUID->"16190b6c-8d5d-df40-950c-1877561f67e3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumMeasurement",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], ScrollPosition -> {0., 0.}], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6"}], 
+                    "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["64", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6"}], 
+                    "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["64", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Entropy: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{"0.`", "\"b\"", "bits", "\"Bits\""}, 
+                   "Quantity"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Parameters: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", "}"}], "SummaryItem"]}]}}, AutoDelete -> False,
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Wolfram`QuantumFramework`QuantumMeasurement[
+   Wolfram`QuantumFramework`QuantumMeasurementOperator[
+    Wolfram`QuantumFramework`QuantumOperator[
+     Wolfram`QuantumFramework`QuantumState[
+     SparseArray[Automatic, {8192}, 0, {1, {{0, 128}, CompressedData["
+1:eJwtyVsoAwAAheHjsrluzN3YmKIoiqIoiqIoyoqiKCuKMlEURYqiKIqiKIqi
+KIqiKIqiKIqiKIqiKIqiKH7l4Xv4z3G4WpxuT0m98Pj3133oh4HBiAEMwo/T
+H0MYhslLMmMEo7B4SyEYwzjCDVIEJjCJaKNkxRSmYfOR7JjBLBy+UgLmMI9E
+PykJC1hEsr+UgiUsIzVASsMKVpEeKGVgDevINElZ2MAmss1SDrawjdwgKQ87
+2EV+sFSAPeyj0CIV4QCHKA6RSnCEY5SGSmU4wSnKwyQnznCOinCpEhe4RFWE
+VI0rXKMmUqrFDW5RFyW5cId71EdLDXjAIxqtUhOe8IzmGMmNF7yiNVZqwxve
+0W6TOvCBT3TapS584RvdcVIPfqB46Rc8hUk3
+         "]}, {
+        2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}]], 2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}]], 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+         0}}], 
+      Wolfram`QuantumFramework`QuantumBasis[<|
+       "Input" -> Wolfram`QuantumFramework`QuditBasis[<|{
+             
+             Wolfram`QuantumFramework`QuditName[\[FormalCapitalI], "Dual" -> 
+              False], 1} -> 1|>], "Output" -> 
+        Wolfram`QuantumFramework`QuditBasis[<|{
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 0], Bold], "Eigenvalue 1"], {
+               0, {1}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 1], Bold], "Eigenvalue 2"], {
+               1, {2}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 2], Bold], "Eigenvalue 3"], {
+               2, {3}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 3], Bold], "Eigenvalue 4"], {
+               3, {4}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 4], Bold], "Eigenvalue 5"], {
+               4, {5}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 5], Bold], "Eigenvalue 6"], {
+               5, {6}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 6], Bold], "Eigenvalue 7"], {
+               6, {7}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 7], Bold], "Eigenvalue 8"], {
+               7, {8}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 8], Bold], "Eigenvalue 9"], {
+               8, {9}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 9], Bold], "Eigenvalue 10"], {
+               9, {10}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 10], Bold], 
+                "Eigenvalue 11"], {10, {11}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 11], Bold], 
+                "Eigenvalue 12"], {11, {12}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 12], Bold], 
+                "Eigenvalue 13"], {12, {13}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 13], Bold], 
+                "Eigenvalue 14"], {13, {14}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 14], Bold], 
+                "Eigenvalue 15"], {14, {15}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 15], Bold], 
+                "Eigenvalue 16"], {15, {16}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{1, 2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 16], Bold], 
+                "Eigenvalue 17"], {16, {17}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 17], Bold], 
+                "Eigenvalue 18"], {17, {18}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 18], Bold], 
+                "Eigenvalue 19"], {18, {19}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 19], Bold], 
+                "Eigenvalue 20"], {19, {20}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 20], Bold], 
+                "Eigenvalue 21"], {20, {21}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 21], Bold], 
+                "Eigenvalue 22"], {21, {22}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 22], Bold], 
+                "Eigenvalue 23"], {22, {23}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 23], Bold], 
+                "Eigenvalue 24"], {23, {24}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 24], Bold], 
+                "Eigenvalue 25"], {24, {25}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 25], Bold], 
+                "Eigenvalue 26"], {25, {26}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 26], Bold], 
+                "Eigenvalue 27"], {26, {27}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 27], Bold], 
+                "Eigenvalue 28"], {27, {28}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 28], Bold], 
+                "Eigenvalue 29"], {28, {29}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 29], Bold], 
+                "Eigenvalue 30"], {29, {30}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 30], Bold], 
+                "Eigenvalue 31"], {30, {31}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 31], Bold], 
+                "Eigenvalue 32"], {31, {32}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 1, 1}, {{2, 2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 32], Bold], 
+                "Eigenvalue 33"], {32, {33}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 33], Bold], 
+                "Eigenvalue 34"], {33, {34}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 34], Bold], 
+                "Eigenvalue 35"], {34, {35}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 35], Bold], 
+                "Eigenvalue 36"], {35, {36}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 36], Bold], 
+                "Eigenvalue 37"], {36, {37}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 37], Bold], 
+                "Eigenvalue 38"], {37, {38}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 38], Bold], 
+                "Eigenvalue 39"], {38, {39}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 39], Bold], 
+                "Eigenvalue 40"], {39, {40}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 40], Bold], 
+                "Eigenvalue 41"], {40, {41}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 41], Bold], 
+                "Eigenvalue 42"], {41, {42}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 42], Bold], 
+                "Eigenvalue 43"], {42, {43}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 43], Bold], 
+                "Eigenvalue 44"], {43, {44}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 44], Bold], 
+                "Eigenvalue 45"], {44, {45}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 45], Bold], 
+                "Eigenvalue 46"], {45, {46}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 46], Bold], 
+                "Eigenvalue 47"], {46, {47}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 47], Bold], 
+                "Eigenvalue 48"], {47, {48}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{1, 2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 48], Bold], 
+                "Eigenvalue 49"], {48, {49}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 49], Bold], 
+                "Eigenvalue 50"], {49, {50}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 50], Bold], 
+                "Eigenvalue 51"], {50, {51}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 51], Bold], 
+                "Eigenvalue 52"], {51, {52}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 52], Bold], 
+                "Eigenvalue 53"], {52, {53}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 53], Bold], 
+                "Eigenvalue 54"], {53, {54}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 54], Bold], 
+                "Eigenvalue 55"], {54, {55}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 55], Bold], 
+                "Eigenvalue 56"], {55, {56}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 1, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 56], Bold], 
+                "Eigenvalue 57"], {56, {57}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 57], Bold], 
+                "Eigenvalue 58"], {57, {58}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 58], Bold], 
+                "Eigenvalue 59"], {58, {59}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 59], Bold], 
+                "Eigenvalue 60"], {59, {60}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 1, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 60], Bold], 
+                "Eigenvalue 61"], {60, {61}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 61], Bold], 
+                "Eigenvalue 62"], {61, {62}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 62], Bold], 
+                "Eigenvalue 63"], {62, {63}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 63], Bold], 
+                "Eigenvalue 64"], {63, {64}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2, 2, 2, 2}, 0, {
+             1, {{0, 0, 1}, {{2, 2, 2, 2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 6} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 6} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 7} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 7} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 8} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 8} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}]|>], 
+        "Picture" -> "Schrodinger", "Label" -> None, 
+        "ParameterSpec" -> {}|>]], {{0, 1, 2, 3, 4, 5, 6, 7}, {}}], {{1, 2, 3,
+     4, 5, 6}}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.974807452521452*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"22998bd8-af52-7742-80e9-f90129a8d46d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["%15"], "Input",
+ NumberMarks->False,
+ CellLabel->"In[16]:=",ExpressionUUID->"faa45927-ecb6-a248-b36d-364c60d8df81"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumMeasurement",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], ScrollPosition -> {0., 0.}], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"1", ",", "2", ",", "3"}], "}"}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["8", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869015724668278`, {0., 10.869015724668278`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], ScrollPosition -> {0., 0.}], 
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{-1.274056809905317, 0.}, {3.2560087399854334`, 
+                0.}}]}, {{}, {
+                RGBColor[1., 0.78, 0.2], 
+                EdgeForm[{
+                  GrayLevel[0], 
+                  Opacity[0.693], 
+                  Thickness[Small]}], {
+                 RGBColor[1., 0.78, 0.2], 
+                 EdgeForm[{
+                   GrayLevel[0], 
+                   Opacity[0.693], 
+                   Thickness[Small]}], 
+                 
+                 RectangleBox[{0.5487982520029133, 0.}, {1.4512017479970867`, 
+                  1.}, RoundingRadius -> 0]}}, {}, {}}, {}, {}, {}, {}, {}}, 
+             AspectRatio -> NCache[GoldenRatio^(-1), 0.6180339887498948], 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {-1.274056809905317, 0.}, 
+             CoordinatesToolOptions :> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, 
+             DefaultBaseStyle -> {"PlotGraphics", "Graphics"}, 
+             DisplayFunction -> Identity, 
+             Frame -> {{True, False}, {True, False}}, 
+             FrameLabel -> {{None, None}, {None, None}}, 
+             FrameTicks -> {{None, None}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}], PlotInteractivity :> True, 
+             PlotRange -> {{All, All}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {None, 
+                Scaled[0.05]}}, Ticks -> {None, Automatic}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Target: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"1", ",", "2", ",", "3"}], "}"}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"Measurement Outcomes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["8", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Entropy: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{"0.`", "\"b\"", "bits", "\"Bits\""}, 
+                   "Quantity"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Parameters: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", "}"}], "SummaryItem"]}]}}, AutoDelete -> False,
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Wolfram`QuantumFramework`QuantumMeasurement[
+   Wolfram`QuantumFramework`QuantumMeasurementOperator[
+    Wolfram`QuantumFramework`QuantumOperator[
+     Wolfram`QuantumFramework`QuantumState[
+     SparseArray[
+      Automatic, {128}, 0, {
+       1, {{0, 16}, {{1}, {2}, {19}, {20}, {37}, {38}, {55}, {56}, {73}, {
+         74}, {91}, {92}, {109}, {110}, {127}, {128}}}, {
+        2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1}]], 
+         2^Rational[-1, 2] 
+         HoldForm[$CellContext`makeOracleOperator[{1, 1, 1, 1, 1, 1, 1, 1}]], 
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}}], 
+      Wolfram`QuantumFramework`QuantumBasis[<|
+       "Input" -> Wolfram`QuantumFramework`QuditBasis[<|{
+             
+             Wolfram`QuantumFramework`QuditName[\[FormalCapitalI], "Dual" -> 
+              False], 1} -> 1|>], "Output" -> 
+        Wolfram`QuantumFramework`QuditBasis[<|{
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 0], Bold], "Eigenvalue 1"], {
+               0, {1}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 1, 1}, {{1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 1], Bold], "Eigenvalue 2"], {
+               1, {2}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 1, 1}, {{1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 2], Bold], "Eigenvalue 3"], {
+               2, {3}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 1, 1}, {{2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 3], Bold], "Eigenvalue 4"], {
+               3, {4}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 1, 1}, {{2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 4], Bold], "Eigenvalue 5"], {
+               4, {5}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 0, 1}, {{1, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 5], Bold], "Eigenvalue 6"], {
+               5, {6}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 0, 1}, {{1, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 6], Bold], "Eigenvalue 7"], {
+               6, {7}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 0, 1}, {{2, 1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[
+              Interpretation[
+               Tooltip[
+                Style[
+                 Subscript["\[ScriptCapitalE]", 7], Bold], "Eigenvalue 8"], {
+               7, {8}}], "Dual" -> False], 1} -> 
+           SparseArray[
+            Automatic, {2, 2, 2}, 0, {1, {{0, 0, 1}, {{2, 2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 2} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 3} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 4} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[0, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{1}}}, {1}}], {
+             Wolfram`QuantumFramework`QuditName[1, "Dual" -> False], 5} -> 
+           SparseArray[Automatic, {2}, 0, {1, {{0, 1}, {{2}}}, {1}}]|>], 
+        "Picture" -> "Schrodinger", "Label" -> None, 
+        "ParameterSpec" -> {}|>]], {{0, 1, 2, 3, 4}, {}}], {{1, 2, 3}}]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.9748073523671303`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"bdcd894a-be10-8d4c-885b-50238d672cae"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -868,260 +2548,135 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", "results", " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{
+   RowBox[{"Module", "[", 
     RowBox[{
-     RowBox[{"isAllZeros", "[", "state_", "]"}], ":=", 
-     RowBox[{"AllTrue", "[", 
-      RowBox[{"state", ",", 
-       RowBox[{
-        RowBox[{"#", "==", "0"}], "&"}]}], "]"}]}], ";"}], "\n", 
-   RowBox[{
-    RowBox[{"If", "[", 
-     RowBox[{
-      RowBox[{"FailureQ", "[", "result", "]"}], ",", 
+     RowBox[{"{", 
       RowBox[{
-      "Print", "[", "\"\<Error: Circuit evaluation failed.\>\"", "]"}], ",", 
-      RowBox[{"Module", "[", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"probs", ",", "measuredOutcomes", ",", "outcomeType"}], 
-         "}"}], ",", 
-        RowBox[{
-         RowBox[{"probs", "=", 
-          RowBox[{"result", "[", "\"\<Probabilities\>\"", "]"}]}], ";", 
-         "\[IndentingNewLine]", 
-         RowBox[{"measuredOutcomes", "=", 
-          RowBox[{"Keys", "[", "probs", "]"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{"Print", "[", 
-          RowBox[{"\"\<Measurement Probabilities: \>\"", ",", "probs"}], 
-          "]"}], ";", "\[IndentingNewLine]", 
-         RowBox[{"(*", 
-          RowBox[{
-           RowBox[{"Deutsch", "-", 
-            RowBox[{"Jozsa", " ", 
-             RowBox[{"Logic", ":", " ", 
-              RowBox[{
-              "If", " ", "all", " ", "0", " ", "or", " ", "all", " ", 
-               "1"}]}]}]}], ",", " ", 
-           RowBox[{
-            RowBox[{"CONSTANT", ".", " ", "Any"}], " ", "other", " ", 
-            "result"}], ",", 
-           RowBox[{"function", " ", "is", " ", 
-            RowBox[{"BALANCED", "."}]}]}], "*)"}], 
-         RowBox[{"(*", 
-          RowBox[{
-           RowBox[{"Check", " ", "if", " ", "the"}], "|", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"0", "..."}], "0"}], ">", 
-            RowBox[{
-            "state", " ", "exists", " ", "with", " ", "probability", " ", 
-             "1"}]}]}], "*)"}], 
-         RowBox[{"If", "[", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"AnyTrue", "[", 
-             RowBox[{"measuredOutcomes", ",", "isAllZeros"}], "]"}], "&&", 
-            RowBox[{
-             RowBox[{"probs", "[", 
-              RowBox[{"ConstantArray", "[", 
-               RowBox[{"0", ",", "n"}], "]"}], "]"}], ">", "0.99"}]}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"outcomeType", "=", "\"\<CONSTANT\>\""}], ",", 
-           "\[IndentingNewLine]", 
-           RowBox[{"outcomeType", "=", "\"\<BALANCED\>\""}]}], "]"}], ";", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Print", "[", 
-          RowBox[{"\"\<Algorithm Conclusion: \>\"", ",", "outcomeType"}], 
-          "]"}], ";", "\[IndentingNewLine]", 
-         RowBox[{"Print", "[", 
-          RowBox[{"\"\<Verification: \>\"", ",", 
-           RowBox[{"If", "[", 
-            RowBox[{
-             RowBox[{"outcomeType", "==", 
-              RowBox[{"ToUpperCase", "[", 
-               RowBox[{"oracleData", "[", "\"\<Type\>\"", "]"}], "]"}]}], 
-             ",", "\"\<SUCCESS\>\"", ",", "\"\<FAILURE\>\""}], "]"}]}], "]"}],
-          ";"}]}], "]"}]}], "]"}], ";"}], "\[IndentingNewLine]"}]}]], "Input",
- CellChangeTimes->{{3.974805983220106*^9, 3.9748061986473293`*^9}, {
-  3.974806915061661*^9, 
-  3.974806992527361*^9}},ExpressionUUID->"6fe2b575-0ce7-7841-bd26-\
-89674fc81e36"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"QuantumCircuitOperator", "[", 
-    RowBox[{"{", 
+      "probs", ",", "zeroStateKey", ",", "probZero", ",", "outcomeType"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"QuantumOperator", "[", 
-       RowBox[{"\<\"H\"\>", ",", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}], "]"}], ",", 
-      RowBox[{"makeOracleOperator", "[", 
+      RowBox[{"probs", "=", 
+       RowBox[{"result", "[", "\"\<Probabilities\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Identify", " ", 
+        RowBox[{"the", "'"}], "All", " ", 
+        RowBox[{"Zeros", "'"}], " ", "key", " ", "based", " ", "on", " ", 
+        "what", " ", "the", " ", "framework", " ", "returned"}], " ", "*)"}], 
+      RowBox[{"(*", " ", 
        RowBox[{
-        RowBox[{"makeTruthTable", "[", "3", "]"}], "[", "\<\"Bits\"\>", "]"}],
-        "]"}], ",", 
-      RowBox[{"QuantumOperator", "[", 
-       RowBox[{"\<\"H\"\>", ",", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}], ",", 
-      RowBox[{"QuantumMeasurementOperator", "[", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}]}], "}"}], "]"}], "[", 
-   RowBox[{"QuantumTensorProduct", "[", 
-    RowBox[{
-     RowBox[{"QuantumState", "[", 
-      RowBox[{"{", 
-       RowBox[{"\<\"Register\"\>", ",", "3"}], "}"}], "]"}], ",", 
-     RowBox[{"QuantumState", "[", 
-      RowBox[{
-       RowBox[{"{", "1", "}"}], ",", "2"}], "]"}]}], "]"}], "]"}], 
-  "[", "\<\"State\"\>", "]"}]], "Output",
- CellChangeTimes->{3.9748062993109264`*^9},
- CellLabel->"Out[10]=",ExpressionUUID->"746f5f89-bce5-c14b-aa6d-d4495603b7f1"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"QuantumCircuitOperator", "[", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"QuantumOperator", "[", 
-       RowBox[{"\<\"H\"\>", ",", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}], "]"}], ",", 
-      RowBox[{"makeOracleOperator", "[", 
-       RowBox[{
-        RowBox[{"makeTruthTable", "[", "3", "]"}], "[", "\<\"Bits\"\>", "]"}],
-        "]"}], ",", 
-      RowBox[{"QuantumOperator", "[", 
-       RowBox[{"\<\"H\"\>", ",", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}], ",", 
-      RowBox[{"QuantumMeasurementOperator", "[", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}]}], "}"}], "]"}], "[", 
-   RowBox[{"QuantumTensorProduct", "[", 
-    RowBox[{
-     RowBox[{"QuantumState", "[", 
-      RowBox[{"{", 
-       RowBox[{"\<\"Register\"\>", ",", "3"}], "}"}], "]"}], ",", 
-     RowBox[{"QuantumState", "[", 
-      RowBox[{
-       RowBox[{"{", "1", "}"}], ",", "2"}], "]"}]}], "]"}], "]"}], 
-  "[", "\<\"Probabilities\"\>", "]"}]], "Output",
- CellChangeTimes->{3.9748062993129196`*^9},
- CellLabel->"Out[11]=",ExpressionUUID->"ccddd455-52a7-5b40-8ac0-e1f1d484910a"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Keys", "invrl", 
-   "\"The argument \
-\\!\\(\\*RowBox[{RowBox[{RowBox[{\\\"QuantumCircuitOperator\\\", \\\"[\\\", \
-RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"QuantumOperator\\\", \\\"[\\\", \
-RowBox[{\\\"\\\\\\\"H\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\", \\\",\\\", \
-\\\"4\\\"}], \\\"}\\\"}]}], \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"makeOracleOperator\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"makeTruthTable\\\", \\\"[\\\", \\\"3\\\", \\\"]\\\"}], \\\
-\"[\\\", \\\"\\\\\\\"Bits\\\\\\\"\\\", \\\"]\\\"}], \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"QuantumOperator\\\", \\\"[\\\", \
-RowBox[{\\\"\\\\\\\"H\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\"}], \
-\\\"}\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"QuantumMeasurementOperator\
-\\\", \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \
-\\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"]\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \
-\\\"[\\\", RowBox[{\\\"QuantumTensorProduct\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"QuantumState\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"Register\\\\\\\"\\\", \\\",\\\", \\\"3\\\"}], \
-\\\"}\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"QuantumState\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"{\\\", \\\"1\\\", \\\"}\\\"}], \\\",\\\", \\\"2\\\"}], \\\
-\"]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}], \\\"[\\\", \\\"\\\\\\\"Probabilities\\\
-\\\\\"\\\", \\\"]\\\"}]\\) is not a valid Association or a list of rules.\"", 
-   2, 12, 1, 30303353415273898833, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.974806299351923*^9},
- CellLabel->
-  "During evaluation of \
-In[10]:=",ExpressionUUID->"05c9cae5-d8d9-eb4f-9b10-eb3217ed06e5"],
-
-Cell[BoxData[
- RowBox[{"\<\"Measurement Outcome: \"\>", " ", 
-  RowBox[{"Keys", "[", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"QuantumCircuitOperator", "[", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"QuantumOperator", "[", 
-         RowBox[{"\<\"H\"\>", ",", 
-          RowBox[{"{", 
-           RowBox[{"1", ",", "2", ",", "3", ",", "4"}], "}"}]}], "]"}], ",", 
-        RowBox[{"makeOracleOperator", "[", 
-         RowBox[{
-          RowBox[{"makeTruthTable", "[", "3", "]"}], "[", "\<\"Bits\"\>", 
-          "]"}], "]"}], ",", 
-        RowBox[{"QuantumOperator", "[", 
-         RowBox[{"\<\"H\"\>", ",", 
-          RowBox[{"{", 
-           RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}], ",", 
-        RowBox[{"QuantumMeasurementOperator", "[", 
+        RowBox[{"Sometimes", " ", "it", " ", "returns", " ", 
          RowBox[{"{", 
-          RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}]}], "}"}], "]"}], "[", 
-     RowBox[{"QuantumTensorProduct", "[", 
-      RowBox[{
-       RowBox[{"QuantumState", "[", 
-        RowBox[{"{", 
-         RowBox[{"\<\"Register\"\>", ",", "3"}], "}"}], "]"}], ",", 
-       RowBox[{"QuantumState", "[", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+        RowBox[{"sometimes", " ", "\"\<000\>\""}], ",", " ", 
+        RowBox[{"idk", " ", "why"}], ",", " ", 
         RowBox[{
-         RowBox[{"{", "1", "}"}], ",", "2"}], "]"}]}], "]"}], "]"}], 
-    "[", "\<\"Probabilities\"\>", "]"}], "]"}]}]], "Print",
- CellChangeTimes->{3.974806299381012*^9},
- CellLabel->
-  "During evaluation of \
-In[10]:=",ExpressionUUID->"89b2893c-4036-254b-a346-161687683094"],
+         RowBox[{"couldn", "'"}], "t", " ", "find", " ", "in", " ", 
+         "documentation"}]}], " ", "*)"}], 
+      RowBox[{"zeroStateKey", "=", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"KeyExistsQ", "[", 
+          RowBox[{"probs", ",", 
+           RowBox[{"ConstantArray", "[", 
+            RowBox[{"0", ",", "n"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ConstantArray", "[", 
+          RowBox[{"0", ",", "n"}], "]"}], ",", 
+         RowBox[{"(*", 
+          RowBox[{"Key", " ", "is", " ", "a", " ", "list", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "*)"}], 
+         "\[IndentingNewLine]", 
+         RowBox[{"StringJoin", "[", 
+          RowBox[{"ConstantArray", "[", 
+           RowBox[{"\"\<0\>\"", ",", "n"}], "]"}], "]"}]}], " ", 
+        RowBox[{"(*", 
+         RowBox[{
+         "Key", " ", "might", " ", "be", " ", "string", " ", "\"\<000\>\"", " ",
+           "ugh"}], "*)"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "Safely", " ", "get", " ", "the", " ", "probability", " ", "of", " ", 
+        "the", " ", "zero", " ", "state", " ", 
+        RowBox[{"(", 
+         RowBox[{"default", " ", "to", " ", "0", " ", "if", " ", "missing"}], 
+         ")"}]}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"probZero", "=", 
+       RowBox[{"Lookup", "[", 
+        RowBox[{"probs", ",", "zeroStateKey", ",", "0"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", 
+       RowBox[{"\"\<Measured Probability of |0...0>: \>\"", ",", "probZero"}],
+        "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{"Determine", " ", "Outcome"}], "*)"}], 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"probZero", ">", "0.99"}], ",", 
+        RowBox[{"outcomeType", "=", "\"\<CONSTANT\>\""}], ",", 
+        RowBox[{"outcomeType", "=", "\"\<BALANCED\>\""}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", 
+       RowBox[{"\"\<Algorithm Conclusion: \>\"", ",", "outcomeType"}], "]"}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "Verify", " ", "against", " ", "the", " ", "hidden", " ", "Oracle", " ",
+         "Type"}], "*)"}], 
+      RowBox[{"Print", "[", 
+       RowBox[{"\"\<Verification: \>\"", ",", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"ToUpperCase", "[", "outcomeType", "]"}], "===", 
+           RowBox[{"ToUpperCase", "[", 
+            RowBox[{"oracleData", "[", "\"\<Type\>\"", "]"}], "]"}]}], 
+          ",", "\"\<SUCCESS\>\"", ",", "\"\<FAILURE (Mismatch)\>\""}], 
+         "]"}]}], "]"}], ";"}]}], "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.974805983220106*^9, 3.9748061986473293`*^9}, {
+  3.974806915061661*^9, 3.974806992527361*^9}, {3.9748075570761986`*^9, 
+  3.974807686197632*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"6fe2b575-0ce7-7841-bd26-89674fc81e36"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- TemplateBox[{
-  "Keys", "invrl", 
-   "\"The argument \
-\\!\\(\\*RowBox[{RowBox[{RowBox[{\\\"QuantumCircuitOperator\\\", \\\"[\\\", \
-RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"QuantumOperator\\\", \\\"[\\\", \
-RowBox[{\\\"\\\\\\\"H\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\", \\\",\\\", \
-\\\"4\\\"}], \\\"}\\\"}]}], \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"makeOracleOperator\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"makeTruthTable\\\", \\\"[\\\", \\\"3\\\", \\\"]\\\"}], \\\
-\"[\\\", \\\"\\\\\\\"Bits\\\\\\\"\\\", \\\"]\\\"}], \\\"]\\\"}], \\\",\\\", \
-RowBox[{\\\"QuantumOperator\\\", \\\"[\\\", \
-RowBox[{\\\"\\\\\\\"H\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \\\",\\\", \\\"3\\\"}], \
-\\\"}\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"QuantumMeasurementOperator\
-\\\", \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \\\",\\\", \\\"2\\\", \
-\\\",\\\", \\\"3\\\"}], \\\"}\\\"}], \\\"]\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \
-\\\"[\\\", RowBox[{\\\"QuantumTensorProduct\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"QuantumState\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
-RowBox[{\\\"\\\\\\\"Register\\\\\\\"\\\", \\\",\\\", \\\"3\\\"}], \
-\\\"}\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"QuantumState\\\", \\\"[\\\", \
-RowBox[{RowBox[{\\\"{\\\", \\\"1\\\", \\\"}\\\"}], \\\",\\\", \\\"2\\\"}], \\\
-\"]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}], \\\"[\\\", \\\"\\\\\\\"Probabilities\\\
-\\\\\"\\\", \\\"]\\\"}]\\) is not a valid Association or a list of rules.\"", 
-   2, 13, 2, 30303353415273898833, "Local"},
-  "MessageTemplate",
-  BaseStyle->"MSG"]], "Message",
- CellChangeTimes->{3.974806299385996*^9},
+ InterpretationBox[
+  RowBox[{"\<\"Measured Probability of |0...0>: \"\>", "\[InvisibleSpace]", 
+   "0"}],
+  SequenceForm["Measured Probability of |0...0>: ", 0],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.974806299381012*^9, 3.9748073585460815`*^9, 
+  3.9748074687671566`*^9, 3.974807717954811*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"9b3ab5a1-2e79-4544-bf10-3521d74b5fcd"],
+In[41]:=",ExpressionUUID->"9aff0be7-6e10-ca49-b4d6-42ace0357503"],
 
-Cell[BoxData["\<\"Algorithm Conclusion: BALANCED\"\>"], "Print",
- CellChangeTimes->{3.9748062993919315`*^9},
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Algorithm Conclusion: \"\>", 
+   "\[InvisibleSpace]", "\<\"BALANCED\"\>"}],
+  SequenceForm["Algorithm Conclusion: ", "BALANCED"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.974806299381012*^9, 3.9748073585460815`*^9, 
+  3.9748074687671566`*^9, 3.9748077179558086`*^9},
  CellLabel->
   "During evaluation of \
-In[10]:=",ExpressionUUID->"1797cb1c-51fb-e24d-91a8-53f150927360"]
+In[41]:=",ExpressionUUID->"f991a2d7-4f00-244a-8423-6d9818b73936"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Verification: \"\>", 
+   "\[InvisibleSpace]", "\<\"FAILURE (Mismatch)\"\>"}],
+  SequenceForm["Verification: ", "FAILURE (Mismatch)"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.974806299381012*^9, 3.9748073585460815`*^9, 
+  3.9748074687671566`*^9, 3.9748077179578037`*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"93314b7a-b14f-ae4f-8ac5-a7bd3e41c52c"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -1312,49 +2867,62 @@ Notebook[{
 Cell[558, 20, 237, 6, 33, "Text",ExpressionUUID->"9365bb65-6c49-4bd6-9afa-6fa59a8f3de7"],
 Cell[CellGroupData[{
 Cell[820, 30, 336, 4, 47, "Input",ExpressionUUID->"b3701442-e55c-5a41-9e94-d4a3b749e722"],
-Cell[1159, 36, 24928, 440, 86, "Output",ExpressionUUID->"1dd052d8-a46a-7b44-b48e-a7005da93c8f"]
+Cell[1159, 36, 24734, 434, 59, "Output",ExpressionUUID->"baec9296-30de-9842-add6-5d11b384bb42"]
 }, Open  ]],
-Cell[26102, 479, 3137, 76, 199, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
+Cell[25908, 473, 3154, 75, 199, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
 Cell[CellGroupData[{
-Cell[29264, 559, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
-Cell[29438, 564, 4228, 100, 313, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"],
+Cell[29087, 552, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
+Cell[29261, 557, 4228, 100, 313, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"],
 Cell[CellGroupData[{
-Cell[33691, 668, 1712, 39, 161, "Input",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
-Cell[35406, 709, 392, 9, 22, "Print",ExpressionUUID->"6b5fe94d-3011-7b4b-9555-d39c11edfa2b"]
+Cell[33514, 661, 1757, 39, 161, "Input",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
+Cell[35274, 702, 464, 10, 22, "Print",ExpressionUUID->"3c85bac7-383a-fa4c-92f6-b66cec7a4106"]
+}, Open  ]],
+Cell[35753, 715, 3462, 80, 332, "Input",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"],
+Cell[CellGroupData[{
+Cell[39240, 799, 127, 2, 28, "Input",ExpressionUUID->"50e27cb6-af20-ae4b-9dae-d9d847ec0032"],
+Cell[39370, 803, 148, 2, 32, "Output",ExpressionUUID->"1badecfe-73e8-6a4a-a601-4f19a37a76ed"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35835, 723, 3076, 72, 294, "Input",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"],
-Cell[38914, 797, 486, 11, 26, "Message",ExpressionUUID->"61d8005d-aa43-2540-96b4-132be0fcb5e7"],
-Cell[39403, 810, 458, 11, 26, "Message",ExpressionUUID->"aca39b4f-1dca-7d47-9fe3-ed834d3df611"],
-Cell[39864, 823, 458, 11, 26, "Message",ExpressionUUID->"6d96afde-b2d3-2c4b-8ff1-3df44d53ad3b"],
-Cell[40325, 836, 485, 11, 26, "Message",ExpressionUUID->"502e887f-0aa0-094f-b9d8-85cdea9b2636"]
+Cell[39555, 810, 127, 2, 28, "Input",ExpressionUUID->"36d2cebc-d491-6947-9edc-e48f39e03137"],
+Cell[39685, 814, 149, 2, 32, "Output",ExpressionUUID->"02b810e1-11aa-6845-9ffd-1c75218ffd87"]
 }, Open  ]],
-Cell[40825, 850, 513, 12, 47, "Input",ExpressionUUID->"62907e41-89aa-2840-8435-48dc983b2ce8"],
+Cell[39849, 819, 514, 12, 47, "Input",ExpressionUUID->"62907e41-89aa-2840-8435-48dc983b2ce8"],
 Cell[CellGroupData[{
-Cell[41363, 866, 3332, 82, 237, "Input",ExpressionUUID->"6fe2b575-0ce7-7841-bd26-89674fc81e36"],
-Cell[44698, 950, 1208, 31, 51, "Output",ExpressionUUID->"746f5f89-bce5-c14b-aa6d-d4495603b7f1"],
-Cell[45909, 983, 1216, 31, 51, "Output",ExpressionUUID->"ccddd455-52a7-5b40-8ac0-e1f1d484910a"],
-Cell[47128, 1016, 1804, 31, 44, "Message",ExpressionUUID->"05c9cae5-d8d9-eb4f-9b10-eb3217ed06e5"],
-Cell[48935, 1049, 1379, 35, 39, "Print",ExpressionUUID->"89b2893c-4036-254b-a346-161687683094"],
-Cell[50317, 1086, 1804, 31, 44, "Message",ExpressionUUID->"9b3ab5a1-2e79-4544-bf10-3521d74b5fcd"],
-Cell[52124, 1119, 213, 4, 22, "Print",ExpressionUUID->"1797cb1c-51fb-e24d-91a8-53f150927360"]
+Cell[40388, 835, 129, 2, 28, "Input",ExpressionUUID->"4c11df33-a819-6744-aabe-9ef04918085f"],
+Cell[40520, 839, 24815, 542, 59, "Output",ExpressionUUID->"dfb78e48-a491-2849-a22c-2381eefacd5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65372, 1386, 129, 2, 28, "Input",ExpressionUUID->"16190b6c-8d5d-df40-950c-1877561f67e3"],
+Cell[65504, 1390, 38152, 843, 59, "Output",ExpressionUUID->"22998bd8-af52-7742-80e9-f90129a8d46d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[103693, 2238, 129, 2, 28, "Input",ExpressionUUID->"faa45927-ecb6-a248-b36d-364c60d8df81"],
+Cell[103825, 2242, 14043, 299, 59, "Output",ExpressionUUID->"bdcd894a-be10-8d4c-885b-50238d672cae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[117905, 2546, 4025, 93, 275, "Input",ExpressionUUID->"6fe2b575-0ce7-7841-bd26-89674fc81e36"],
+Cell[CellGroupData[{
+Cell[121955, 2643, 426, 10, 22, "Print",ExpressionUUID->"9aff0be7-6e10-ca49-b4d6-42ace0357503"],
+Cell[122384, 2655, 430, 10, 22, "Print",ExpressionUUID->"f991a2d7-4f00-244a-8423-6d9818b73936"],
+Cell[122817, 2667, 434, 10, 22, "Print",ExpressionUUID->"93314b7a-b14f-ae4f-8ac5-a7bd3e41c52c"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52386, 1129, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
-Cell[52563, 1134, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
-Cell[53405, 1156, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
-Cell[54168, 1177, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
-Cell[54902, 1197, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
-Cell[56438, 1237, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
+Cell[123312, 2684, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
+Cell[123489, 2689, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
+Cell[124331, 2711, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
+Cell[125094, 2732, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
+Cell[125828, 2752, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
+Cell[127364, 2792, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
 Cell[CellGroupData[{
-Cell[56812, 1247, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
-Cell[57135, 1255, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
+Cell[127738, 2802, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
+Cell[128061, 2810, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
 }, Open  ]],
-Cell[57389, 1262, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
+Cell[128315, 2817, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
 Cell[CellGroupData[{
-Cell[57892, 1276, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
-Cell[58213, 1284, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
+Cell[128818, 2831, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
+Cell[129139, 2839, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
 }, Open  ]]
 }, Open  ]]
 }
