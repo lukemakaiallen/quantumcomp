@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45122,        952]
-NotebookOptionsPosition[     42883,        910]
-NotebookOutlinePosition[     43286,        926]
-CellTagsIndexPosition[     43243,        923]
+NotebookDataLength[     45913,        968]
+NotebookOptionsPosition[     43674,        926]
+NotebookOutlinePosition[     44077,        942]
+CellTagsIndexPosition[     44034,        939]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -714,30 +714,46 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"gate", " ", "definitions"}], " ", "->", " ", 
      RowBox[{"Circuit", " ", "building"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{"djCircuit", " ", "=", " ", 
-    RowBox[{"QuantumCircuitOperator", "[", 
-     RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{"(*", " ", 
-       RowBox[{
-       "apply", " ", "Hadamard", " ", "Gate", " ", "to", " ", "each", " ", 
-        "qubit", " ", 
-        RowBox[{"(", 
-         RowBox[{
-         "all", " ", "inputs", " ", "plus", " ", "helper", " ", "qubit"}], 
-         ")"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"QuantumOperator", "[", 
-        RowBox[{"\"\<H\>\"", ",", " ", 
-         RowBox[{"Range", "[", 
-          RowBox[{"n", " ", "+", " ", "1"}], "]"}]}], "]"}], ",", 
-       "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"djCircuit", " ", "=", " ", 
+     RowBox[{"QuantumCircuitOperator", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
        RowBox[{"(*", " ", 
-        RowBox[{"situation", " ", "custom", " ", "oracle"}], " ", "*)"}], 
-       "\[IndentingNewLine]", "oracleOp", ","}], "\[IndentingNewLine]", "}"}],
-      "]"}]}]}]}]], "Input",
+        RowBox[{
+        "apply", " ", "Hadamard", " ", "Gate", " ", "to", " ", "each", " ", 
+         "qubit", " ", 
+         RowBox[{"(", 
+          RowBox[{
+          "all", " ", "inputs", " ", "plus", " ", "helper", " ", "qubit"}], 
+          ")"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"QuantumOperator", "[", 
+         RowBox[{"\"\<H\>\"", ",", " ", 
+          RowBox[{"Range", "[", 
+           RowBox[{"n", " ", "+", " ", "1"}], "]"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{"situation", " ", "custom", " ", "oracle"}], " ", "*)"}], 
+        "\[IndentingNewLine]", "oracleOp", ",", "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "additional", " ", "Hadamard", " ", "Gate", " ", "for", " ", "input",
+           " ", "qubits", " ", "only"}], " ", "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"QuantumOperator", "[", 
+         RowBox[{"\"\<H\>\"", ",", " ", 
+          RowBox[{"Range", "[", "n", "]"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "take", " ", "measurements", " ", "of", " ", "input", " ", 
+          "qubits"}], " ", "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"QuantumMeasurementOperator", "[", 
+         RowBox[{"Range", "[", "n", "]"}], "]"}]}], "\[IndentingNewLine]", 
+       "}"}], "]"}]}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.974805147534384*^9, 3.974805274192936*^9}, {
-  3.974805389585003*^9, 3.9748055349136124`*^9}, {3.974805581843281*^9, 
-  3.9748055843359203`*^9}},ExpressionUUID->"529e7fc2-6e41-534b-9ac8-\
+   3.974805389585003*^9, 3.9748055349136124`*^9}, {3.974805581843281*^9, 
+   3.9748055843359203`*^9}, 3.974805666286106*^9, {3.974805712442766*^9, 
+   3.974805829064438*^9}},ExpressionUUID->"529e7fc2-6e41-534b-9ac8-\
 52cff529ed24"]
 }, Open  ]],
 
@@ -935,23 +951,23 @@ Cell[CellGroupData[{
 Cell[28976, 553, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
 Cell[29150, 558, 3647, 84, 294, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"],
 Cell[32800, 644, 1645, 39, 161, "Input",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
-Cell[34448, 685, 2247, 55, 256, "Input",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"]
+Cell[34448, 685, 3038, 71, 332, "Input",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36732, 745, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
-Cell[36909, 750, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
-Cell[37751, 772, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
-Cell[38514, 793, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
-Cell[39248, 813, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
-Cell[40784, 853, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
+Cell[37523, 761, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
+Cell[37700, 766, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
+Cell[38542, 788, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
+Cell[39305, 809, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
+Cell[40039, 829, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
+Cell[41575, 869, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
 Cell[CellGroupData[{
-Cell[41158, 863, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
-Cell[41481, 871, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
+Cell[41949, 879, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
+Cell[42272, 887, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
 }, Open  ]],
-Cell[41735, 878, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
+Cell[42526, 894, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
 Cell[CellGroupData[{
-Cell[42238, 892, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
-Cell[42559, 900, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
+Cell[43029, 908, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
+Cell[43350, 916, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
 }, Open  ]]
 }, Open  ]]
 }
