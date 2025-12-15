@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42609,        891]
-NotebookOptionsPosition[     40467,        850]
-NotebookOutlinePosition[     40870,        866]
-CellTagsIndexPosition[     40827,        863]
+NotebookDataLength[     45122,        952]
+NotebookOptionsPosition[     42883,        910]
+NotebookOutlinePosition[     43286,        926]
+CellTagsIndexPosition[     43243,        923]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -480,7 +480,7 @@ Cell[BoxData[
      "Balanced", " ", "or", " ", "Constant"}], ";", " ", 
     RowBox[{
     "hopefully", " ", "will", " ", "work", " ", "for", " ", "both", " ", 
-     "Quantum", " ", "and", " ", "Classical"}]}], "*)"}], 
+     "Quantum", " ", "and", " ", "Classical"}]}], " ", "*)"}], 
   "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"makeTruthTable", "[", "n_Integer", "]"}], " ", ":=", " ", 
@@ -500,9 +500,9 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"type", "===", "\"\<Constant\>\""}], ",", 
          "\[IndentingNewLine]", 
-         RowBox[{"(*", 
+         RowBox[{"(*", " ", 
           RowBox[{
-          "All", " ", "0", "s", " ", "or", " ", "All", " ", "1", "s"}], 
+          "All", " ", "0", "s", " ", "or", " ", "All", " ", "1", "s"}], " ", 
           "*)"}], "\[IndentingNewLine]", 
          RowBox[{"If", "[", 
           RowBox[{
@@ -515,11 +515,11 @@ Cell[BoxData[
             RowBox[{"1", ",", 
              RowBox[{"2", "^", "n"}]}], "]"}]}], "]"}], ",", 
          "\[IndentingNewLine]", 
-         RowBox[{"(*", 
+         RowBox[{"(*", " ", 
           RowBox[{"Balanced", ":", 
            RowBox[{
            "Shuffle", " ", "equal", " ", "number", " ", "of", " ", "0", "s", " ",
-             "and", " ", "1", "s"}]}], "*)"}], "\[IndentingNewLine]", 
+             "and", " ", "1", "s"}]}], " ", "*)"}], "\[IndentingNewLine]", 
          RowBox[{"RandomSample", "[", 
           RowBox[{"Join", "[", 
            RowBox[{
@@ -534,18 +534,19 @@ Cell[BoxData[
                RowBox[{"(", 
                 RowBox[{"n", "-", "1"}], ")"}]}]}], "]"}]}], "]"}], "]"}]}], 
         "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"(*", 
+      RowBox[{"(*", " ", 
        RowBox[{
        "return", " ", "bits", " ", "and", " ", "hidden", " ", "type", " ", 
-        "for", " ", "verification"}], "*)"}], "\[IndentingNewLine]", 
+        "for", " ", "verification"}], " ", "*)"}], "\[IndentingNewLine]", 
       RowBox[{"<|", 
        RowBox[{
         RowBox[{"\"\<Bits\>\"", "->", " ", "bits"}], ",", " ", 
         RowBox[{"\"\<Type\>\"", "->", " ", "type"}]}], "|>"}]}]}], 
     "\[IndentingNewLine]", "]"}]}]}]], "Input",
  CellChangeTimes->{{3.974638827493473*^9, 3.974638833573395*^9}, 
-   3.9748040747705326`*^9, {3.9748041196123714`*^9, 
-   3.974804121665106*^9}},ExpressionUUID->"e2e5c893-ffce-474c-973b-\
+   3.9748040747705326`*^9, {3.9748041196123714`*^9, 3.974804121665106*^9}, {
+   3.974805561419796*^9, 
+   3.974805570767336*^9}},ExpressionUUID->"e2e5c893-ffce-474c-973b-\
 d2b5e3b9aaef"],
 
 Cell[CellGroupData[{
@@ -557,11 +558,11 @@ Cell["Quantum Implementation:", "Subtitle",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"(*", 
+  RowBox[{"(*", " ", 
    RowBox[{
    "Need", " ", "to", " ", "convert", " ", "TruthTable", " ", "into", " ", 
     "a", " ", "QuantumOperator", " ", "in", " ", "order", " ", "to", " ", 
-    "use", " ", "it"}], "*)"}], "\[IndentingNewLine]", 
+    "use", " ", "it"}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"makeOracleOperator", "[", "truthTable_List", "]"}], " ", ":=", 
    " ", 
@@ -575,10 +576,11 @@ Cell[BoxData[
       RowBox[{"n", " ", "=", " ", 
        RowBox[{"Log2", "[", 
         RowBox[{"Length", "[", "truthTable", "]"}], "]"}]}], ";", " ", 
-      RowBox[{"(*", 
+      RowBox[{"(*", " ", 
        RowBox[{
        "this", " ", "way", " ", "will", " ", "scale", " ", "number", " ", 
-        "of", " ", "input", " ", "qubits"}], "*)"}], "\[IndentingNewLine]", 
+        "of", " ", "input", " ", "qubits"}], " ", "*)"}], 
+      "\[IndentingNewLine]", 
       RowBox[{"perm", " ", "=", " ", 
        RowBox[{"Table", "[", "\[IndentingNewLine]", 
         RowBox[{
@@ -596,14 +598,15 @@ Cell[BoxData[
              RowBox[{"Quotient", "[", 
               RowBox[{"val", ",", " ", "2"}], "]"}]}], ";", 
             "\[IndentingNewLine]", 
-            RowBox[{"(*", 
+            RowBox[{"(*", " ", 
              RowBox[{
               RowBox[{
               "actual", " ", "Oracle", " ", "Logic", " ", "based", " ", "on", 
                " ", "XOR", " ", "gate"}], ",", " ", 
               RowBox[{"y_new", " ", "=", " ", 
                RowBox[{"y", " ", "XOR", " ", "f", 
-                RowBox[{"(", "x", ")"}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+                RowBox[{"(", "x", ")"}]}]}]}], " ", "*)"}], 
+            "\[IndentingNewLine]", 
             RowBox[{"newY", " ", "=", " ", 
              RowBox[{"BitXor", "[", 
               RowBox[{"y", ",", " ", 
@@ -635,25 +638,23 @@ Cell[BoxData[
    3.9748033843008327`*^9, 3.974803758570753*^9}, {3.9748039165433617`*^9, 
    3.974803978310524*^9}, {3.9748040866289234`*^9, 3.9748041463997097`*^9}, {
    3.9748041983878937`*^9, 3.9748045466249657`*^9}, {3.9748047134384823`*^9, 
-   3.974804724765978*^9}},ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-\
+   3.974804724765978*^9}, {3.974805548006794*^9, 
+   3.974805559230404*^9}},ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-\
 686bfdf6a4f4"],
 
 Cell[BoxData[
- RowBox[{" ", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{"Actual", " ", "Deutsch"}], "-", 
-    RowBox[{"Jozsa", " ", "algorithm"}]}], "*)"}], "\[IndentingNewLine]", 
+ RowBox[{"\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"CONFIG", "->", 
     RowBox[{"SELECT", " ", "NUMBER", " ", "OF", " ", "INPUT", " ", "QUBITS", " ", 
-     RowBox[{"(", "n", ")"}]}]}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"(", "n", ")"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"n", " ", "=", " ", "3"}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"(*", 
+   RowBox[{"(*", " ", 
     RowBox[{"'", 
-     RowBox[{"secret", "'"}], " ", "oracle", " ", "generation"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"secret", "'"}], " ", "oracle", " ", "generation"}], " ", "*)"}],
+    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"oracleData", " ", "=", " ", 
      RowBox[{"makeTruthTable", "[", "n", "]"}]}], ";"}], "\[IndentingNewLine]", 
@@ -662,23 +663,82 @@ Cell[BoxData[
      RowBox[{"makeOracleOperator", "[", 
       RowBox[{"oracleData", "[", "\"\<Bits\>\"", "]"}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
-   RowBox[{"(*", 
+   RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{"for", " ", 
       RowBox[{"testing", "/", " ", "sanity"}]}], ",", " ", 
      RowBox[{
      "having", " ", "it", " ", "tell", " ", "us", " ", "hidden", " ", 
-      "function", " ", "type"}]}], "*)"}], "\[IndentingNewLine]", 
+      "function", " ", "type"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Print", "[", 
      RowBox[{"\"\<Actual Hidden Function Type:\>\"", ",", " ", 
-      RowBox[{"oracleData", "[", "\"\<Type\>\"", "]"}]}], "]"}], ";"}], 
-   "\[IndentingNewLine]"}]}]], "Input",
+      RowBox[{"oracleData", "[", "\"\<Type\>\"", "]"}]}], "]"}], 
+    ";"}]}]}]], "Input",
  CellChangeTimes->{
   3.974803775783575*^9, {3.9748047283217354`*^9, 3.974804751869875*^9}, {
    3.9748047850443954`*^9, 3.9748049060357876`*^9}, {3.9748049390317*^9, 
-   3.974804998440241*^9}},ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-\
-5724f5505f66"]
+   3.974804998440241*^9}, {3.9748051258195534`*^9, 3.974805137356367*^9}, {
+   3.9748055373246098`*^9, 
+   3.9748055490255814`*^9}},ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-\
+5724f5505f66"],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Actual", " ", "Deutsch"}], "-", 
+    RowBox[{"Jozsa", " ", "algorithm"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"should", " ", "have", " ", "n", " ", "qubits", " ", "om"}], " ",
+      "|", 
+     RowBox[{"0", ">"}]}], ",", " ", 
+    RowBox[{
+     RowBox[{"and", " ", "last", " ", "in"}], " ", "|", 
+     RowBox[{"1", ">"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"initialState", " ", "=", " ", 
+    RowBox[{"QuantumTensorProduct", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"QuantumState", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Register\>\"", ",", " ", "n"}], "}"}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"QuantumState", "[", 
+       RowBox[{
+        RowBox[{"{", "1", "}"}], ",", " ", "2"}], "]"}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"gate", " ", "definitions"}], " ", "->", " ", 
+     RowBox[{"Circuit", " ", "building"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"djCircuit", " ", "=", " ", 
+    RowBox[{"QuantumCircuitOperator", "[", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "apply", " ", "Hadamard", " ", "Gate", " ", "to", " ", "each", " ", 
+        "qubit", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "all", " ", "inputs", " ", "plus", " ", "helper", " ", "qubit"}], 
+         ")"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"QuantumOperator", "[", 
+        RowBox[{"\"\<H\>\"", ",", " ", 
+         RowBox[{"Range", "[", 
+          RowBox[{"n", " ", "+", " ", "1"}], "]"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{"situation", " ", "custom", " ", "oracle"}], " ", "*)"}], 
+       "\[IndentingNewLine]", "oracleOp", ","}], "\[IndentingNewLine]", "}"}],
+      "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.974805147534384*^9, 3.974805274192936*^9}, {
+  3.974805389585003*^9, 3.9748055349136124`*^9}, {3.974805581843281*^9, 
+  3.9748055843359203`*^9}},ExpressionUUID->"529e7fc2-6e41-534b-9ac8-\
+52cff529ed24"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -870,27 +930,28 @@ Cell[CellGroupData[{
 Cell[820, 30, 336, 4, 47, "Input",ExpressionUUID->"b3701442-e55c-5a41-9e94-d4a3b749e722"],
 Cell[1159, 36, 24587, 432, 59, "Output",ExpressionUUID->"937868cc-f622-8c41-b537-f0f1963f89f0"]
 }, Open  ]],
-Cell[25761, 471, 3105, 77, 218, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
+Cell[25761, 471, 3190, 78, 218, "Input",ExpressionUUID->"e2e5c893-ffce-474c-973b-d2b5e3b9aaef"],
 Cell[CellGroupData[{
-Cell[28891, 552, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
-Cell[29065, 557, 3547, 81, 294, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"],
-Cell[32615, 640, 1664, 40, 180, "Input",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"]
+Cell[28976, 553, 171, 3, 52, "Subtitle",ExpressionUUID->"2ac46703-23f2-b04a-a65d-471a180a5967"],
+Cell[29150, 558, 3647, 84, 294, "Input",ExpressionUUID->"0fc5ee93-ba57-d74e-ae45-686bfdf6a4f4"],
+Cell[32800, 644, 1645, 39, 161, "Input",ExpressionUUID->"ff5d0eb5-5c28-c04c-9fc4-5724f5505f66"],
+Cell[34448, 685, 2247, 55, 256, "Input",ExpressionUUID->"529e7fc2-6e41-534b-9ac8-52cff529ed24"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34316, 685, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
-Cell[34493, 690, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
-Cell[35335, 712, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
-Cell[36098, 733, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
-Cell[36832, 753, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
-Cell[38368, 793, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
+Cell[36732, 745, 174, 3, 52, "Subtitle",ExpressionUUID->"997281b5-9645-c14e-984c-caa257a06b15"],
+Cell[36909, 750, 839, 20, 104, "Input",ExpressionUUID->"817f48e4-2925-ff42-a478-570701acf743"],
+Cell[37751, 772, 760, 19, 104, "Input",ExpressionUUID->"5a9b0e44-97b0-784a-bd45-62e3970dff70"],
+Cell[38514, 793, 731, 18, 104, "Input",ExpressionUUID->"97d985fa-0edb-2742-9065-c91a910a9eaa"],
+Cell[39248, 813, 1533, 38, 142, "Input",ExpressionUUID->"07068273-e7ac-e945-913b-a36a6347139e"],
+Cell[40784, 853, 349, 6, 28, "Input",ExpressionUUID->"3d3f46a0-e9ec-e547-969c-c41dea2a4fb0"],
 Cell[CellGroupData[{
-Cell[38742, 803, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
-Cell[39065, 811, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
+Cell[41158, 863, 320, 6, 28, "Input",ExpressionUUID->"96263337-22b9-584b-86e9-5d1220943ba7"],
+Cell[41481, 871, 239, 4, 32, "Output",ExpressionUUID->"e3fb5d85-4e65-4743-be1d-112d3036d332"]
 }, Open  ]],
-Cell[39319, 818, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
+Cell[41735, 878, 478, 10, 28, "Input",ExpressionUUID->"838c050e-4cfb-0d4e-87ba-bdb5472629ad"],
 Cell[CellGroupData[{
-Cell[39822, 832, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
-Cell[40143, 840, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
+Cell[42238, 892, 318, 6, 28, "Input",ExpressionUUID->"823590e8-428a-9d4f-8c7e-544fcb2e208d"],
+Cell[42559, 900, 296, 6, 32, "Output",ExpressionUUID->"69944f70-ca10-fc4e-a5f6-d6ba8512d906"]
 }, Open  ]]
 }, Open  ]]
 }
